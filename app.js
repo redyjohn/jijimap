@@ -320,6 +320,8 @@ SPOTS.forEach((spot) => {
           ${spot.flag ? `<span class="badge badge-flag">${spot.flagLabel}</span>` : ''}
         </span>
       </span>
+      ${isEnd || !spot.info ? '' : `
+      <a class="btn btn-info card-info-btn" href="${spot.info}" target="_blank" rel="noopener" title="${spot.infoLabel || '景點介紹'}">📷 照片介紹</a>`}
       <span class="card-chevron" aria-hidden="true"></span>
     </summary>
     <div class="card-body">
@@ -329,12 +331,12 @@ SPOTS.forEach((spot) => {
       </dl>`}
       <div class="card-note"><span class="note-label">備考</span><p>${noteHtml}</p></div>
       ${spot.extra ? `<p class="card-extra">${spot.extra}</p>` : ''}
+      ${isEnd || !spot.info ? '' : `
+      <p class="card-info-line">景點介紹：<a href="${spot.info}" target="_blank" rel="noopener">${spot.infoLabel || '查看當地照片與說明'}</a></p>`}
       <div class="card-actions">
         <a class="btn btn-primary" href="${navUrl(spot)}" target="_blank" rel="noopener">
           ${isEnd ? '導航回台中' : 'Google 導航'}
         </a>
-        ${isEnd || !spot.info ? '' : `
-        <a class="btn btn-info" href="${spot.info}" target="_blank" rel="noopener" title="${spot.infoLabel || '景點介紹'}">景點介紹（含照片）</a>`}
         ${isEnd ? '' : `
         <a class="btn" href="${placeUrl(spot)}" target="_blank" rel="noopener">在 Google 地圖開啟</a>
         <button class="btn btn-ghost" data-locate="${spot.no}">在上方地圖定位</button>
@@ -346,6 +348,14 @@ SPOTS.forEach((spot) => {
 });
 
 cardsEl.addEventListener('click', (e) => {
+  const infoBtn = e.target.closest('.card-info-btn');
+  if (infoBtn) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(infoBtn.href, '_blank', 'noopener');
+    return;
+  }
+
   const btn = e.target.closest('[data-locate]');
   if (!btn) return;
   const no = Number(btn.dataset.locate);
