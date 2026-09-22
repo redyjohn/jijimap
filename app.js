@@ -40,23 +40,7 @@ const SPOTS = [
     extra: '補充：進入道路狹窄（約2公尺、難會車），大型車輛不易進出，建議小車前往並留意會車點。'
   },
   {
-    no: 5, name: '大樟樹／大眾爺廟', tier: 'main', section: '市區段',
-    lat: 23.828866, lng: 120.779851, nav: '集集大眾爺廟 大樟樹',
-    address: '南投縣集集鎮和平里中集路',
-    feature: '大型老樟樹、傳統信仰、小鎮生活景觀',
-    note: '合併成一站。不需要分成兩個景點。利用樹體尺度與人物做群舞、走位。',
-    noteStrong: '合併成一站。'
-  },
-  {
-    no: 6, name: '鄭界宗宅', tier: 'optional', section: '市區段',
-    lat: 23.827518, lng: 120.777402, nav: '鄭界宗宅',
-    address: '南投縣集集鎮集集街（和平里）',
-    feature: '傳統老宅、巷弄、歷史建築',
-    note: '只有現場動線真的順才補拍；不可為此繞路。',
-    extra: '補充：私人產權、未列古蹟，拍攝前須取得屋主同意。'
-  },
-  {
-    no: 7, name: '武昌宮', tier: 'main', section: '市區段',
+    no: 5, name: '武昌宮', tier: 'main', section: '市區段',
     lat: 23.831675, lng: 120.792361, nav: '集集武昌宮',
     address: '南投縣集集鎮八張街181號',
     feature: '921 地震遺址、特殊建築、歷史記憶',
@@ -64,15 +48,38 @@ const SPOTS = [
     noteStrong: '重要視覺場景。'
   },
   {
-    no: 8, name: '泰順廊橋', tier: 'main', section: '市區段',
+    no: 6, name: '泰順廊橋', tier: 'main', section: '市區段',
     lat: 23.830313, lng: 120.792791, nav: '泰順廊橋',
     address: '南投縣集集鎮八張街（武昌宮旁）',
     feature: '木造廊橋、橋體縱深、特殊空間',
-    note: '作為市區段最後一個主要拍攝點。適合雙人、群舞、走位及縱深構圖。',
-    extra: '補充：與武昌宮相鄰，可同一次停車連續拍攝。'
+    note: '與武昌宮相鄰，適合連續拍攝。適合雙人、群舞、走位及縱深構圖。',
+    extra: '補充：可同一次停車完成武昌宮與廊橋。'
   },
   {
-    no: 9, name: '十三目仔窯', tier: 'main', section: '窯業與隧道段',
+    no: 7, name: '大樟樹', tier: 'main', section: '市區段',
+    lat: 23.82890, lng: 120.77970, nav: '集集大樟樹',
+    address: '南投縣集集鎮和平里中集路（大眾爺廟旁）',
+    feature: '大型老樟樹、樹體尺度、小鎮生活景觀',
+    note: '與下一站大眾爺廟相鄰，建議連續拍攝。利用樹體尺度與人物做群舞、走位。',
+    noteStrong: '與下一站大眾爺廟相鄰，建議連續拍攝。'
+  },
+  {
+    no: 8, name: '大眾爺廟', tier: 'main', section: '市區段',
+    lat: 23.828866, lng: 120.779851, nav: '集集大眾爺廟',
+    address: '南投縣集集鎮和平里中集路',
+    feature: '傳統信仰、廟宇空間、小鎮生活景觀',
+    note: '與大樟樹同區，接續拍攝即可。可拍廟宇環境與生活感 B-roll。'
+  },
+  {
+    no: 9, name: '鄭界宗宅', tier: 'optional', section: '市區段',
+    lat: 23.827518, lng: 120.777402, nav: '鄭界宗宅',
+    address: '南投縣集集鎮集集街（和平里）',
+    feature: '傳統老宅、巷弄、歷史建築',
+    note: '只有現場動線真的順才補拍；不可為此繞路。市區段最後一站。',
+    extra: '補充：私人產權、未列古蹟，拍攝前須取得屋主同意。'
+  },
+  {
+    no: 10, name: '十三目仔窯', tier: 'main', section: '窯業與隧道段',
     flag: 'check', flagLabel: '⚠️ 待確認',
     lat: 23.827491, lng: 120.771235, nav: '十三目仔窯',
     address: '南投縣集集鎮林尾段山腳巷（鐵道旁）',
@@ -81,7 +88,7 @@ const SPOTS = [
     noteStrong: '保留為重要核心，但不得假設可直接進入拍攝。'
   },
   {
-    no: 10, name: '添興窯', tier: 'optional', section: '窯業與隧道段',
+    no: 11, name: '添興窯', tier: 'optional', section: '窯業與隧道段',
     lat: 23.83247, lng: 120.75608, nav: '添興窯陶藝村',
     address: '南投縣集集鎮田寮里楓林巷10號（綠色隧道旁）',
     feature: '傳統陶藝、地方窯業文化',
@@ -89,7 +96,7 @@ const SPOTS = [
     extra: '補充：電話 049-2781130，出發前先確認可否商業拍攝與費用。'
   },
   {
-    no: 11, name: '集集隧道', tier: 'optional', section: '窯業與隧道段',
+    no: 12, name: '集集隧道', tier: 'optional', section: '窯業與隧道段',
     flag: 'check', flagLabel: '⚠️ 安全評估',
     lat: 23.825001, lng: 120.763074, nav: '集集隧道 152縣道',
     address: '南投縣集集鎮投152縣道（草嶺腳段公路隧道）',
@@ -98,7 +105,7 @@ const SPOTS = [
     noteStrong: '不建議列為固定拍攝點。'
   },
   {
-    no: 12, name: '綠色隧道', tier: 'main', section: '窯業與隧道段',
+    no: 13, name: '綠色隧道', tier: 'main', section: '窯業與隧道段',
     lat: 23.830958, lng: 120.758087, nav: '集集綠色隧道',
     address: '南投縣投152縣道 3K–7.3K（名間鄉至集集鎮，全長約4.5公里）',
     feature: '約4.5公里樟樹林道、鐵道並行、長距離縱深',
@@ -107,7 +114,7 @@ const SPOTS = [
     extra: '補充：標記點為東側入口附近，林道沿 152 縣道往名間方向延伸，現勘時再選定最佳機位段落。'
   },
   {
-    no: 13, name: '集集攔河堰', tier: 'main', section: '濁水溪段',
+    no: 14, name: '集集攔河堰', tier: 'main', section: '濁水溪段',
     lat: 23.82028, lng: 120.76417, nav: '集集攔河堰',
     address: '南投縣集集鎮林尾里攔河路2號',
     feature: '濁水溪、水利工程、堰體、山景與大尺度河川景觀',
@@ -116,7 +123,7 @@ const SPOTS = [
     extra: '補充：管理中心及展示館官方標示 09:00–17:00，颱風、災害或維修可能封閉；電話 049-2764031 先確認。'
   },
   {
-    no: 14, name: '開闢鴻荒石碣', tier: 'main', section: '濁水溪段',
+    no: 15, name: '開闢鴻荒石碣', tier: 'main', section: '濁水溪段',
     lat: 23.82015, lng: 120.76300, nav: '開闢鴻荒石碣',
     address: '南投縣集集鎮攔河路2號一帶（集集大橋北端、攔河堰旁）',
     feature: '清代石碣、濁水溪、舊集集大橋橋墩、山景',
@@ -124,7 +131,7 @@ const SPOTS = [
     extra: '補充：座標為集集大橋北端附近推估位置，現場依指標與自行車道入口確認。'
   },
   {
-    no: 15, name: '濁水溪河岸', tier: 'main', section: '濁水溪段',
+    no: 16, name: '濁水溪河岸', tier: 'main', section: '濁水溪段',
     flag: 'final', flagLabel: '★ 評分收尾',
     lat: 23.81930, lng: 120.76620, nav: '23.81930,120.76620',
     address: '集集大橋北岸河濱一帶（建議由開闢鴻荒自行車道側進入）',
@@ -134,7 +141,7 @@ const SPOTS = [
     extra: '補充：此點為區域性場景而非單一地址，導航使用座標定位，實際下車與拍攝位置現勘決定。'
   },
   {
-    no: 16, name: '返回台中', tier: 'end', section: '收隊',
+    no: 17, name: '返回台中', tier: 'end', section: '收隊',
     lat: null, lng: null, nav: '台中市',
     address: '—',
     feature: '—',
@@ -143,9 +150,9 @@ const SPOTS = [
 ];
 
 const SEGMENTS = [
-  { label: '① 市區段（車站 → 泰順廊橋）', from: 1, to: 8 },
-  { label: '② 窯業與隧道段（十三目仔窯 → 綠色隧道）', from: 9, to: 12 },
-  { label: '③ 濁水溪段（攔河堰 → 濁水溪河岸）', from: 13, to: 15 }
+  { label: '① 市區段（車站 → 鄭界宗宅）', from: 1, to: 9 },
+  { label: '② 窯業與隧道段（十三目仔窯 → 綠色隧道）', from: 10, to: 13 },
+  { label: '③ 濁水溪段（攔河堰 → 濁水溪河岸）', from: 14, to: 16 }
 ];
 
 /* ---------- 工具 ---------- */
@@ -383,13 +390,13 @@ document.getElementById('statOptional').textContent = count('optional');
 document.getElementById('statTotal').textContent = SPOTS.length - 1;
 
 const CHECKS = [
-  { no: 9, text: '十三目仔窯：確認產權、是否開放、能否進入拍攝及場地安全（有資料記錄園區停止營業）。' },
-  { no: 10, text: '添興窯：週四公休，作為窯業替代場景前先確認營運與拍攝許可。' },
-  { no: 11, text: '集集隧道：一線道且有車輛通行，安全與控場難度高，現勘後再決定是否納入。' },
-  { no: 12, text: '綠色隧道：可能因天候或整修暫時封閉；拍攝需避開車流與其他使用者。' },
-  { no: 13, text: '集集攔河堰：進入管理中心或觀景設施須配合開放時間。' },
-  { no: 7, text: '武昌宮：遺址安全與場地規範，拍攝舞蹈前先向廟方確認。' },
-  { no: 15, text: '濁水溪河岸：執行無痕拍攝，不進入危險水域、不破壞植被。' }
+  { no: 5, text: '武昌宮：遺址安全與場地規範，拍攝舞蹈前先向廟方確認。' },
+  { no: 10, text: '十三目仔窯：確認產權、是否開放、能否進入拍攝及場地安全（有資料記錄園區停止營業）。' },
+  { no: 11, text: '添興窯：週四公休，作為窯業替代場景前先確認營運與拍攝許可。' },
+  { no: 12, text: '集集隧道：一線道且有車輛通行，安全與控場難度高，現勘後再決定是否納入。' },
+  { no: 13, text: '綠色隧道：可能因天候或整修暫時封閉；拍攝需避開車流與其他使用者。' },
+  { no: 14, text: '集集攔河堰：進入管理中心或觀景設施須配合開放時間。' },
+  { no: 16, text: '濁水溪河岸：執行無痕拍攝，不進入危險水域、不破壞植被。' }
 ];
 
 const checklistEl = document.getElementById('checklist');
