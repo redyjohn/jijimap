@@ -40,12 +40,10 @@ h1, h2, h3 { line-height: 1.35; margin: 0; }
 
 .hero-inner { max-width: 1080px; margin: 0 auto; }
 
-.kicker {
-  margin: 0 0 8px;
-  letter-spacing: .28em;
-  font-size: 12px;
+.kicker .ver {
+  letter-spacing: .08em;
+  color: #ffe08a;
   font-weight: 700;
-  color: #b8d6c6;
 }
 
 .hero h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 900; letter-spacing: .02em; }
