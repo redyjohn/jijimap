@@ -16,8 +16,7 @@ const SPOTS = [
     feature: '集集鐵道小鎮代表、木造車站、月台與鐵道景觀',
     note: 'MV開場核心。建議第一站完成主要團體舞、車站正面、月台及鐵道 B-roll。',
     noteStrong: 'MV開場核心。',
-    info: 'https://www.sunmoonlake.gov.tw/attractions/Attractions?A=20&Id=46',
-    infoLabel: '日月潭風景區｜集集火車站'
+
   },
   {
     no: 2, name: '軍史公園', tier: 'backup', section: '市區段',
@@ -25,8 +24,7 @@ const SPOTS = [
     address: '南投縣集集鎮軍史公園（距集集車站約800公尺）',
     feature: '軍機、軍事展示、開闊空間',
     note: '與車站、明新書院同屬市區北側景點。時間不足可取消。',
-    info: 'https://travel.nantou.gov.tw/attractions/military-park/',
-    infoLabel: '南投旅遊網｜軍史公園'
+
   },
   {
     no: 3, name: '明新書院', tier: 'main', section: '市區段',
@@ -34,8 +32,7 @@ const SPOTS = [
     address: '南投縣集集鎮永昌里東昌巷4號',
     feature: '清代書院、紅磚建築、傳統中式格局',
     note: '歷史建築核心。利用門廊、柱列、階梯與對稱空間拍攝。',
-    info: 'https://travel.nantou.gov.tw/attractions/mingxin-academy/',
-    infoLabel: '南投旅遊網｜明新書院'
+
   },
   {
     no: 4, name: '化及蠻貊碣', tier: 'backup', section: '市區段',
@@ -44,8 +41,7 @@ const SPOTS = [
     feature: '歷史石碣、古蹟與小鎮歷史感',
     note: '以 B-roll 為主，控制 5–10 分鐘；不安排完整舞蹈。',
     extra: '補充：進入道路狹窄（約2公尺、難會車），大型車輛不易進出，建議小車前往並留意會車點。',
-    info: 'https://zh.wikipedia.org/wiki/%E5%8C%96%E5%8F%8A%E8%A0%BB%E8%B2%8A%E7%A2%A3',
-    infoLabel: '維基百科｜化及蠻貊碣'
+
   },
   {
     no: 5, name: '武昌宮', tier: 'main', section: '市區段',
@@ -54,8 +50,7 @@ const SPOTS = [
     feature: '921 地震遺址、特殊建築、歷史記憶',
     note: '重要視覺場景。建議完整拍攝一段舞蹈；注意遺址安全及場地規範。',
     noteStrong: '重要視覺場景。',
-    info: 'https://travel.nantou.gov.tw/attractions/wuchang-temple/',
-    infoLabel: '南投旅遊網｜武昌宮'
+
   },
   {
     no: 6, name: '泰順廊橋', tier: 'main', section: '市區段',
@@ -64,8 +59,7 @@ const SPOTS = [
     feature: '木造廊橋、橋體縱深、特殊空間',
     note: '與武昌宮相鄰，適合連續拍攝。適合雙人、群舞、走位及縱深構圖。',
     extra: '補充：可同一次停車完成武昌宮與廊橋。',
-    info: 'https://www.sunmoonlake.gov.tw/Attractions/Attractions?a=20&id=105',
-    infoLabel: '日月潭風景區｜泰順廊橋'
+
   },
   {
     no: 7, name: '大樟樹', tier: 'main', section: '市區段',
@@ -74,8 +68,7 @@ const SPOTS = [
     feature: '大型老樟樹、樹體尺度、小鎮生活景觀',
     note: '與下一站大眾爺廟相鄰，建議連續拍攝。利用樹體尺度與人物做群舞、走位。',
     noteStrong: '與下一站大眾爺廟相鄰，建議連續拍攝。',
-    info: 'https://www.sunmoonlake.gov.tw/Attractions/Attractions?a=20&id=109',
-    infoLabel: '日月潭風景區｜大眾爺祠（大樟樹）'
+
   },
   {
     no: 8, name: '大眾爺廟', tier: 'main', section: '市區段',
@@ -83,8 +76,7 @@ const SPOTS = [
     address: '南投縣集集鎮和平里中集路',
     feature: '傳統信仰、廟宇空間、小鎮生活景觀',
     note: '與大樟樹同區，接續拍攝即可。可拍廟宇環境與生活感 B-roll。',
-    info: 'https://travel.nantou.gov.tw/attractions/dazhong-ye-temple/',
-    infoLabel: '南投旅遊網｜大眾爺祠'
+
   },
   {
     no: 9, name: '鄭界宗宅', tier: 'optional', section: '市區段',
@@ -93,8 +85,7 @@ const SPOTS = [
     feature: '傳統老宅、巷弄、歷史建築',
     note: '只有現場動線真的順才補拍；不可為此繞路。市區段最後一站。',
     extra: '補充：私人產權、未列古蹟，拍攝前須取得屋主同意。',
-    info: 'http://justabalcony.blogspot.com/2018/04/just-old_5.html',
-    infoLabel: '建築筆記｜鄭氏古厝實地照片'
+
   },
   {
     no: 10, name: '十三目仔窯', tier: 'main', section: '窯業與隧道段',
@@ -104,8 +95,7 @@ const SPOTS = [
     feature: '傳統磚窯、窯體、鐵道周邊空間',
     note: '保留為重要核心，但不得假設可直接進入拍攝。2026年已有實地資料記錄園區停止營業，正式拍攝前必須確認產權、是否開放、是否能進入及場地安全。',
     noteStrong: '保留為重要核心，但不得假設可直接進入拍攝。',
-    info: 'https://fullfenblog.tw/red-brick-kiln/',
-    infoLabel: '旅遊札記｜十三目仔窯實地照片'
+
   },
   {
     no: 11, name: '添興窯', tier: 'optional', section: '窯業與隧道段',
@@ -114,8 +104,7 @@ const SPOTS = [
     feature: '傳統陶藝、地方窯業文化',
     note: '若十三目仔窯無法拍，可作為窯業文化替代鏡頭。官方目前資料仍列有營運資訊，但週四公休。',
     extra: '補充：電話 049-2781130，出發前先確認可否商業拍攝與費用。',
-    info: 'https://travel.nantou.gov.tw/attractions/tensing-kiln-ceramic-art-village/',
-    infoLabel: '南投旅遊網｜添興窯陶藝村'
+
   },
   {
     no: 12, name: '集集隧道', tier: 'optional', section: '窯業與隧道段',
@@ -125,8 +114,7 @@ const SPOTS = [
     feature: '老隧道、特殊地形、單線道路空間',
     note: '不建議列為固定拍攝點。一線道且有車輛通行，安全與控場難度高；現勘確認後再決定。',
     noteStrong: '不建議列為固定拍攝點。',
-    info: 'https://suni.tw/nantou-scene8/',
-    infoLabel: '旅遊分享｜集集隧道周邊實地照片'
+
   },
   {
     no: 13, name: '綠色隧道', tier: 'main', section: '窯業與隧道段',
@@ -136,8 +124,7 @@ const SPOTS = [
     note: '「鐵道與小鎮」核心場景。適合行進式、跟拍及群舞。拍攝需避開車流與其他使用者。官方目前資料顯示場域正常開放，但仍可能因天候或整修暫時封閉。',
     noteStrong: '「鐵道與小鎮」核心場景。',
     extra: '補充：標記點為東側入口附近，林道沿 152 縣道往名間方向延伸，現勘時再選定最佳機位段落。',
-    info: 'https://travel.nantou.gov.tw/attractions/jiji-green-tunnel/',
-    infoLabel: '南投旅遊網｜集集綠色隧道'
+
   },
   {
     no: 14, name: '集集攔河堰', tier: 'main', section: '濁水溪段',
@@ -147,8 +134,7 @@ const SPOTS = [
     note: '「濁水溪與生態」核心第一站。拍攝大景、堰體、河川及團體隊形。若需要進入管理中心或觀景設施，須配合開放時間。',
     noteStrong: '「濁水溪與生態」核心第一站。',
     extra: '補充：管理中心及展示館官方標示 09:00–17:00，颱風、災害或維修可能封閉；電話 049-2764031 先確認。',
-    info: 'https://travel.nantou.gov.tw/attractions/jiji-weir/',
-    infoLabel: '南投旅遊網｜集集攔河堰'
+
   },
   {
     no: 15, name: '開闢鴻荒石碣', tier: 'main', section: '濁水溪段',
@@ -157,8 +143,7 @@ const SPOTS = [
     feature: '清代石碣、濁水溪、舊集集大橋橋墩、山景',
     note: '與攔河堰同一區域，應連續拍攝。以歷史 B-roll、橋墩、山河景為主。官方標示 24 小時開放。',
     extra: '補充：座標為集集大橋北端附近推估位置，現場依指標與自行車道入口確認。',
-    info: 'https://www.sunmoonlake.gov.tw/Attractions/Attractions?a=20&id=110',
-    infoLabel: '日月潭風景區｜開闢鴻荒石碣'
+
   },
   {
     no: 16, name: '濁水溪河岸', tier: 'main', section: '濁水溪段',
@@ -169,8 +154,7 @@ const SPOTS = [
     note: '第二評分標準最重要的收尾場景。拍河流大景＋群舞＋遠景。執行無痕拍攝，不進入危險水域、不破壞植被。',
     noteStrong: '第二評分標準最重要的收尾場景。',
     extra: '補充：此點為區域性場景而非單一地址，導航使用座標定位，實際下車與拍攝位置現勘決定。',
-    info: 'https://travel.nantou.gov.tw/attractions/jiji-weir/',
-    infoLabel: '南投旅遊網｜集集攔河堰與濁水溪景'
+
   },
   {
     no: 17, name: '返回台中', tier: 'end', section: '收隊',
@@ -196,6 +180,11 @@ const navUrl = (spot) =>
 const placeUrl = (spot) =>
   'https://www.google.com/maps/search/?api=1&query=' +
   encodeURIComponent(spot.lat ? `${spot.lat},${spot.lng}` : spot.nav);
+
+/** Google 圖片搜尋：優先用 photoQuery，否則「集集 + 景點名」 */
+const photoUrl = (spot) =>
+  'https://www.google.com/search?tbm=isch&q=' +
+  encodeURIComponent(spot.photoQuery || `集集 ${spot.name}`);
 
 function segmentUrl(from, to) {
   const list = SPOTS.filter((s) => s.no >= from && s.no <= to);
@@ -260,7 +249,7 @@ mapSpots.forEach((spot) => {
          <h3>${spot.no}. ${spot.name}</h3>
          <p class="popup-feature">${spot.feature}</p>
          <a class="popup-btn" href="${navUrl(spot)}" target="_blank" rel="noopener">Google 導航</a>
-         ${spot.info ? `<a class="popup-info" href="${spot.info}" target="_blank" rel="noopener">景點介紹（含照片）</a>` : ''}
+         ${spot.tier !== 'end' ? `<a class="popup-info" href="${photoUrl(spot)}" target="_blank" rel="noopener">Google 圖片</a>` : ''}
          <button class="popup-link" data-goto-card="${spot.no}">查看景點卡片</button>
        </div>`
     );
@@ -320,8 +309,8 @@ SPOTS.forEach((spot) => {
           ${spot.flag ? `<span class="badge badge-flag">${spot.flagLabel}</span>` : ''}
         </span>
       </span>
-      ${isEnd || !spot.info ? '' : `
-      <a class="btn btn-info card-info-btn" href="${spot.info}" target="_blank" rel="noopener" title="${spot.infoLabel || '景點介紹'}">📷 照片介紹</a>`}
+      ${isEnd ? '' : `
+      <a class="btn btn-info card-info-btn" href="${photoUrl(spot)}" target="_blank" rel="noopener" title="Google 圖片搜尋：集集 ${spot.name}">📷 Google 圖片</a>`}
       <span class="card-chevron" aria-hidden="true"></span>
     </summary>
     <div class="card-body">
@@ -331,8 +320,8 @@ SPOTS.forEach((spot) => {
       </dl>`}
       <div class="card-note"><span class="note-label">備考</span><p>${noteHtml}</p></div>
       ${spot.extra ? `<p class="card-extra">${spot.extra}</p>` : ''}
-      ${isEnd || !spot.info ? '' : `
-      <p class="card-info-line">景點介紹：<a href="${spot.info}" target="_blank" rel="noopener">${spot.infoLabel || '查看當地照片與說明'}</a></p>`}
+      ${isEnd ? '' : `
+      <p class="card-info-line">照片：<a href="${photoUrl(spot)}" target="_blank" rel="noopener">Google 圖片搜尋「集集 ${spot.name}」</a></p>`}
       <div class="card-actions">
         <a class="btn btn-primary" href="${navUrl(spot)}" target="_blank" rel="noopener">
           ${isEnd ? '導航回台中' : 'Google 導航'}
