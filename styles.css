@@ -275,15 +275,25 @@ main {
 .tier-border-end { border-left-color: var(--end); }
 
 .card summary {
-  display: flex;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "no title chevron"
+    "info info info";
   align-items: center;
-  gap: 12px;
+  column-gap: 12px;
+  row-gap: 10px;
   padding: 14px 16px;
   cursor: pointer;
   list-style: none;
   user-select: none;
 }
 .card summary::-webkit-details-marker { display: none; }
+
+.card-no { grid-area: no; }
+.card-title { grid-area: title; min-width: 0; }
+.card-chevron { grid-area: chevron; }
+.card-info-btn { grid-area: info; }
 
 .card-no {
   flex: 0 0 auto;
@@ -302,7 +312,6 @@ main {
 .card-no.tier-optional { background: var(--optional); color: #4a3f06; }
 
 .card-title {
-  flex: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -336,11 +345,18 @@ main {
 .card[open] .card-chevron { transform: rotate(-135deg); }
 
 .card-info-btn {
-  flex: 0 0 auto;
-  padding: 5px 12px;
-  font-size: 12.5px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
   white-space: nowrap;
-  margin-left: auto;
+  margin: 0;
+  border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
 }
 .card-info-btn::before { content: none; }
 
@@ -354,13 +370,18 @@ main {
   font-weight: 700;
 }
 
-@media (max-width: 640px) {
-  .card summary { flex-wrap: wrap; }
-  .card-info-btn {
-    margin: 4px 0 0 44px;
-    order: 5;
+@media (min-width: 641px) {
+  .card summary {
+    grid-template-columns: 32px minmax(0, 1fr) auto auto;
+    grid-template-areas: "no title info chevron";
+    row-gap: 0;
   }
-  .card-chevron { margin-left: auto; }
+  .card-info-btn {
+    width: auto;
+    padding: 5px 12px;
+    font-size: 12.5px;
+    border-radius: 999px;
+  }
 }
 
 .card-body {
