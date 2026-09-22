@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>集集街舞 MV 場勘路線</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">南投 · 集集鎮</p>
+    <h1>集集街舞 MV 場勘路線</h1>
+    <p class="lede">台中出發｜以「分區集中拍攝、減少跨區折返」為原則</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num" id="statMain">–</span><span class="stat-label">主要景點</span></div>
+      <div class="stat"><span class="stat-num" id="statBackup">–</span><span class="stat-label">重要備案</span></div>
+      <div class="stat"><span class="stat-num" id="statOptional">–</span><span class="stat-label">有時間再拍</span></div>
+      <div class="stat"><span class="stat-num" id="statTotal">–</span><span class="stat-label">總點位</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="map-panel">
+    <div class="panel-head">
+      <h2>整體景點地圖</h2>
+      <p class="panel-sub">點選地圖上的編號可看景點資訊與導航；右上角可切換街道圖／衛星影像。</p>
+    </div>
+    <div id="map" role="application" aria-label="集集景點地圖"></div>
+    <div class="legend">
+      <span class="legend-item"><i class="dot tier-main"></i>主要景點</span>
+      <span class="legend-item"><i class="dot tier-backup"></i>重要備案</span>
+      <span class="legend-item"><i class="dot tier-optional"></i>有時間再拍</span>
+      <span class="legend-item"><i class="line"></i>拍攝順序路線</span>
+    </div>
+    <div class="route-nav">
+      <p class="route-nav-title">分段 Google 路線導航（依順序串接多個點）</p>
+      <div class="route-nav-btns" id="segmentBtns"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="list-panel">
+    <div class="panel-head">
+      <h2>場勘路線與景點卡片</h2>
+      <p class="panel-sub">點卡片標題展開詳細資訊，每一點都可直接開啟 Google 導航。</p>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="filters" role="group" aria-label="景點篩選">
+        <button class="chip is-active" data-filter="all">全部</button>
+        <button class="chip" data-filter="main">主要景點</button>
+        <button class="chip" data-filter="backup">重要備案</button>
+        <button class="chip" data-filter="optional">有時間再拍</button>
+        <button class="chip" data-filter="check">待確認／安全評估</button>
+      </div>
+      <div class="bulk">
+        <button class="ghost-btn" id="expandAll">全部展開</button>
+        <button class="ghost-btn" id="collapseAll">全部收合</button>
+      </div>
+    </div>
+
+    <div id="cards"></div>
+  </section>
+
+  <section class="panel" id="notes-panel">
+    <div class="panel-head">
+      <h2>現勘前必確認</h2>
+      <p class="panel-sub">以下為路線表中已標註的風險點，出發前逐項確認。</p>
+    </div>
+    <ul class="checklist" id="checklist"></ul>
+  </section>
+</main>
+
+<footer>
+  <p>景點座標取自公開圖資（維基百科、文化資產資料、OpenStreetMap），僅供場勘導航參考；實際拍攝點位請以現場勘查結果為準。</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
