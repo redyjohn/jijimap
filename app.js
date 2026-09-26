@@ -1,4 +1,4 @@
-/* 集集街舞 MV 場勘路線
+/* 集集街舞 MV 拍攝路線
    資料順序即拍攝順序；tier 決定顏色與篩選。 */
 
 const TIERS = {
@@ -10,16 +10,25 @@ const TIERS = {
 
 const SPOTS = [
   {
-    no: 1, name: '集集車站', tier: 'main', section: '市區段',
+    no: 1, name: '車埕車站', tier: 'main', section: '車埕段',
+    lat: 23.832637, lng: 120.86574, nav: '車埕車站',
+    address: '南投縣水里鄉民權巷2號',
+    feature: '集集支線終點站、木造車站、鐵道與山城景觀',
+    note: '路線第一站。集集支線終點的木造車站，適合開場、月台與鐵道 B-roll。',
+    noteStrong: '路線第一站。',
+
+  },
+  {
+    no: 2, name: '集集車站', tier: 'main', section: '市區段',
     lat: 23.82361, lng: 120.78778, nav: '集集車站',
     address: '南投縣集集鎮民生路75號',
     feature: '集集鐵道小鎮代表、木造車站、月台與鐵道景觀',
-    note: 'MV開場核心。建議第一站完成主要團體舞、車站正面、月台及鐵道 B-roll。',
+    note: 'MV開場核心。建議完成主要團體舞、車站正面、月台及鐵道 B-roll。',
     noteStrong: 'MV開場核心。',
 
   },
   {
-    no: 2, name: '軍史公園', tier: 'backup', section: '市區段',
+    no: 3, name: '軍史公園', tier: 'backup', section: '市區段',
     lat: 23.82718, lng: 120.79541, nav: '集集軍史公園',
     address: '南投縣集集鎮軍史公園（距集集車站約800公尺）',
     feature: '軍機、軍事展示、開闊空間',
@@ -27,7 +36,7 @@ const SPOTS = [
 
   },
   {
-    no: 3, name: '明新書院', tier: 'main', section: '市區段',
+    no: 4, name: '明新書院', tier: 'main', section: '市區段',
     lat: 23.82753, lng: 120.79963, nav: '明新書院',
     address: '南投縣集集鎮永昌里東昌巷4號',
     feature: '清代書院、紅磚建築、傳統中式格局',
@@ -35,16 +44,26 @@ const SPOTS = [
 
   },
   {
-    no: 4, name: '化及蠻貊碣', tier: 'backup', section: '市區段',
-    lat: 23.826314, lng: 120.807335, nav: '化及蠻貊碣',
-    address: '南投縣集集鎮廣明里（特有生物研究保育中心旁巷道進入約800公尺）',
-    feature: '歷史石碣、古蹟與小鎮歷史感',
-    note: '以 B-roll 為主，控制 5–10 分鐘；不安排完整舞蹈。',
-    extra: '補充：進入道路狹窄（約2公尺、難會車），大型車輛不易進出，建議小車前往並留意會車點。',
+    no: 5, name: '集集3D彩繪秘境', tier: 'main', section: '市區段',
+    lat: 23.82810, lng: 120.78650, nav: '集集鎮公所',
+    address: '南投縣集集鎮玉映里庄子巷、玉映巷（集集鎮公所對面，民生路61號）',
+    feature: '老宅巷弄、3D 彩繪牆、火車與石虎主題',
+    note: '公所對面巷弄的彩繪牆。適合近景、走位與巷弄縱深；導航先到鎮公所，再進入對面巷弄。',
+    extra: '補充：標記點為公所南側巷口附近，實際機位現勘再定。',
 
   },
   {
-    no: 5, name: '武昌宮', tier: 'main', section: '市區段',
+    no: 6, name: '泰順廊橋', tier: 'main', section: '市區段',
+    lat: 23.830313, lng: 120.792791, nav: '泰順廊橋',
+    address: '南投縣集集鎮八張街（武昌宮旁）',
+    feature: '木造廊橋、橋體縱深、特殊空間',
+    note: '與下一站武昌宮相鄰，適合連續拍攝。適合雙人、群舞、走位及縱深構圖。',
+    noteStrong: '與下一站武昌宮相鄰，適合連續拍攝。',
+    extra: '補充：可同一次停車完成廊橋與武昌宮。',
+
+  },
+  {
+    no: 7, name: '武昌宮', tier: 'main', section: '市區段',
     lat: 23.831675, lng: 120.792361, nav: '集集武昌宮',
     address: '南投縣集集鎮八張街181號',
     feature: '921 地震遺址、特殊建築、歷史記憶',
@@ -53,122 +72,47 @@ const SPOTS = [
 
   },
   {
-    no: 6, name: '泰順廊橋', tier: 'main', section: '市區段',
-    lat: 23.830313, lng: 120.792791, nav: '泰順廊橋',
-    address: '南投縣集集鎮八張街（武昌宮旁）',
-    feature: '木造廊橋、橋體縱深、特殊空間',
-    note: '與武昌宮相鄰，適合連續拍攝。適合雙人、群舞、走位及縱深構圖。',
-    extra: '補充：可同一次停車完成武昌宮與廊橋。',
-
-  },
-  {
-    no: 7, name: '大樟樹', tier: 'main', section: '市區段',
-    lat: 23.82890, lng: 120.77970, nav: '集集大樟樹',
-    address: '南投縣集集鎮和平里中集路（大眾爺廟旁）',
-    feature: '大型老樟樹、樹體尺度、小鎮生活景觀',
-    note: '與下一站大眾爺廟相鄰，建議連續拍攝。利用樹體尺度與人物做群舞、走位。',
-    noteStrong: '與下一站大眾爺廟相鄰，建議連續拍攝。',
-
-  },
-  {
     no: 8, name: '大眾爺廟', tier: 'main', section: '市區段',
     lat: 23.828866, lng: 120.779851, nav: '集集大眾爺廟',
     address: '南投縣集集鎮和平里中集路',
     feature: '傳統信仰、廟宇空間、小鎮生活景觀',
-    note: '與大樟樹同區，接續拍攝即可。可拍廟宇環境與生活感 B-roll。',
+    note: '市區段最後一站。可拍廟宇環境與生活感 B-roll。',
 
   },
   {
-    no: 9, name: '鄭界宗宅', tier: 'optional', section: '市區段',
-    lat: 23.827518, lng: 120.777402, nav: '鄭界宗宅',
-    address: '南投縣集集鎮集集街（和平里）',
-    feature: '傳統老宅、巷弄、歷史建築',
-    note: '只有現場動線真的順才補拍；不可為此繞路。市區段最後一站。',
-    extra: '補充：私人產權、未列古蹟，拍攝前須取得屋主同意。',
-
-  },
-  {
-    no: 10, name: '十三目仔窯', tier: 'main', section: '窯業與隧道段',
-    flag: 'check', flagLabel: '⚠️ 待確認',
-    lat: 23.827491, lng: 120.771235, nav: '十三目仔窯',
-    address: '南投縣集集鎮林尾段山腳巷（鐵道旁）',
-    feature: '傳統磚窯、窯體、鐵道周邊空間',
-    note: '保留為重要核心，但不得假設可直接進入拍攝。2026年已有實地資料記錄園區停止營業，正式拍攝前必須確認產權、是否開放、是否能進入及場地安全。',
-    noteStrong: '保留為重要核心，但不得假設可直接進入拍攝。',
-
-  },
-  {
-    no: 11, name: '添興窯', tier: 'optional', section: '窯業與隧道段',
-    lat: 23.83247, lng: 120.75608, nav: '添興窯陶藝村',
-    address: '南投縣集集鎮田寮里楓林巷10號（綠色隧道旁）',
-    feature: '傳統陶藝、地方窯業文化',
-    note: '若十三目仔窯無法拍，可作為窯業文化替代鏡頭。官方目前資料仍列有營運資訊，但週四公休。',
-    extra: '補充：電話 049-2781130，出發前先確認可否商業拍攝與費用。',
-
-  },
-  {
-    no: 12, name: '集集隧道', tier: 'optional', section: '窯業與隧道段',
-    flag: 'check', flagLabel: '⚠️ 安全評估',
-    lat: 23.825001, lng: 120.763074, nav: '集集隧道 152縣道',
-    address: '南投縣集集鎮投152縣道（草嶺腳段公路隧道）',
-    feature: '老隧道、特殊地形、單線道路空間',
-    note: '不建議列為固定拍攝點。一線道且有車輛通行，安全與控場難度高；現勘確認後再決定。',
-    noteStrong: '不建議列為固定拍攝點。',
-
-  },
-  {
-    no: 13, name: '綠色隧道', tier: 'main', section: '窯業與隧道段',
-    lat: 23.830958, lng: 120.758087, nav: '集集綠色隧道',
-    address: '南投縣投152縣道 3K–7.3K（名間鄉至集集鎮，全長約4.5公里）',
+    no: 9, name: '綠色隧道', tier: 'main', section: '隧道段',
+    lat: 23.827491, lng: 120.771235, nav: '南投縣集集鎮和平里市前街25號',
+    address: '南投縣集集鎮和平里市前街25號（投152縣道旁、十三目仔窯一帶）',
     feature: '約4.5公里樟樹林道、鐵道並行、長距離縱深',
     note: '「鐵道與小鎮」核心場景。適合行進式、跟拍及群舞。拍攝需避開車流與其他使用者。官方目前資料顯示場域正常開放，但仍可能因天候或整修暫時封閉。',
     noteStrong: '「鐵道與小鎮」核心場景。',
-    extra: '補充：標記點為東側入口附近，林道沿 152 縣道往名間方向延伸，現勘時再選定最佳機位段落。',
+    extra: '補充：導航點為市前街25號（十三目仔窯鐵道旁），林道沿 152 縣道往名間方向延伸，現勘時再選定最佳機位段落。',
 
   },
   {
-    no: 14, name: '集集攔河堰', tier: 'main', section: '濁水溪段',
-    lat: 23.82028, lng: 120.76417, nav: '集集攔河堰',
+    no: 10, name: '攔河堰管理中心', tier: 'main', section: '濁水溪段',
+    lat: 23.82028, lng: 120.76417, nav: '集集攔河堰管理中心',
     address: '南投縣集集鎮林尾里攔河路2號',
     feature: '濁水溪、水利工程、堰體、山景與大尺度河川景觀',
-    note: '「濁水溪與生態」核心第一站。拍攝大景、堰體、河川及團體隊形。若需要進入管理中心或觀景設施，須配合開放時間。',
-    noteStrong: '「濁水溪與生態」核心第一站。',
+    note: '「濁水溪與生態」核心。拍攝大景、堰體、河川及團體隊形。進入管理中心或觀景設施須配合開放時間。',
+    noteStrong: '「濁水溪與生態」核心。',
     extra: '補充：管理中心及展示館官方標示 09:00–17:00，颱風、災害或維修可能封閉；電話 049-2764031 先確認。',
 
   },
   {
-    no: 15, name: '開闢鴻荒石碣', tier: 'main', section: '濁水溪段',
+    no: 11, name: '「開闢鴻荒」石碣', tier: 'main', section: '濁水溪段',
     lat: 23.82015, lng: 120.76300, nav: '開闢鴻荒石碣',
     address: '南投縣集集鎮攔河路2號一帶（集集大橋北端、攔河堰旁）',
     feature: '清代石碣、濁水溪、舊集集大橋橋墩、山景',
-    note: '與攔河堰同一區域，應連續拍攝。以歷史 B-roll、橋墩、山河景為主。官方標示 24 小時開放。',
+    note: '與攔河堰管理中心同一區域，應連續拍攝。以歷史 B-roll、橋墩、山河景為主。官方標示 24 小時開放。',
     extra: '補充：座標為集集大橋北端附近推估位置，現場依指標與自行車道入口確認。',
 
-  },
-  {
-    no: 16, name: '濁水溪河岸', tier: 'main', section: '濁水溪段',
-    flag: 'final', flagLabel: '★ 評分收尾',
-    lat: 23.81930, lng: 120.76620, nav: '23.81930,120.76620',
-    address: '集集大橋北岸河濱一帶（建議由開闢鴻荒自行車道側進入）',
-    feature: '濁水溪、河岸、山景與自然地形',
-    note: '第二評分標準最重要的收尾場景。拍河流大景＋群舞＋遠景。執行無痕拍攝，不進入危險水域、不破壞植被。',
-    noteStrong: '第二評分標準最重要的收尾場景。',
-    extra: '補充：此點為區域性場景而非單一地址，導航使用座標定位，實際下車與拍攝位置現勘決定。',
-
-  },
-  {
-    no: 17, name: '返回台中', tier: 'end', section: '收隊',
-    lat: null, lng: null, nav: '台中市',
-    address: '—',
-    feature: '—',
-    note: '河岸拍攝完成後離開集集，不再返回市區。實際回程道路依當日導航及交通狀況決定。'
   }
 ];
 
 const SEGMENTS = [
-  { label: '① 市區段（車站 → 鄭界宗宅）', from: 1, to: 9 },
-  { label: '② 窯業與隧道段（十三目仔窯 → 綠色隧道）', from: 10, to: 13 },
-  { label: '③ 濁水溪段（攔河堰 → 濁水溪河岸）', from: 14, to: 16 }
+  { label: '① 車埕到市區（車埕車站 → 大眾爺廟）', from: 1, to: 8 },
+  { label: '② 隧道與濁水溪（綠色隧道 → 開闢鴻荒石碣）', from: 9, to: 11 }
 ];
 
 /* ---------- 工具 ---------- */
@@ -373,6 +317,13 @@ SEGMENTS.forEach((seg) => {
 
 const filtersEl = document.getElementById('filters');
 
+// 沒有對應景點的篩選按鈕不顯示，避免按下後出現空清單
+filtersEl.querySelectorAll('.chip').forEach((chip) => {
+  const f = chip.dataset.filter;
+  if (f === 'all') return;
+  chip.hidden = !SPOTS.some((s) => matchesFilter(s, f));
+});
+
 filtersEl.addEventListener('click', (e) => {
   const chip = e.target.closest('.chip');
   if (!chip) return;
@@ -416,32 +367,6 @@ document.getElementById('collapseAll').addEventListener('click', () => {
   document.querySelectorAll('.card').forEach((c) => (c.open = false));
 });
 
-/* ---------- 統計與現勘清單 ---------- */
+/* ---------- 統計 ---------- */
 
-const count = (tier) => SPOTS.filter((s) => s.tier === tier).length;
-document.getElementById('statMain').textContent = count('main');
-document.getElementById('statBackup').textContent = count('backup');
-document.getElementById('statOptional').textContent = count('optional');
-document.getElementById('statTotal').textContent = SPOTS.length - 1;
-
-const CHECKS = [
-  { no: 5, text: '武昌宮：遺址安全與場地規範，拍攝舞蹈前先向廟方確認。' },
-  { no: 10, text: '十三目仔窯：確認產權、是否開放、能否進入拍攝及場地安全（有資料記錄園區停止營業）。' },
-  { no: 11, text: '添興窯：週四公休，作為窯業替代場景前先確認營運與拍攝許可。' },
-  { no: 12, text: '集集隧道：一線道且有車輛通行，安全與控場難度高，現勘後再決定是否納入。' },
-  { no: 13, text: '綠色隧道：可能因天候或整修暫時封閉；拍攝需避開車流與其他使用者。' },
-  { no: 14, text: '集集攔河堰：進入管理中心或觀景設施須配合開放時間。' },
-  { no: 16, text: '濁水溪河岸：執行無痕拍攝，不進入危險水域、不破壞植被。' }
-];
-
-const checklistEl = document.getElementById('checklist');
-CHECKS.forEach((item, i) => {
-  const spot = SPOTS.find((s) => s.no === item.no);
-  const li = document.createElement('li');
-  const id = `check-${i}`;
-  li.innerHTML = `
-    <input type="checkbox" id="${id}">
-    <label for="${id}"><b>${spot.no}. ${spot.name}</b>｜${item.text.replace(/^[^：]*：/, '')}</label>
-    <a class="check-link" href="${navUrl(spot)}" target="_blank" rel="noopener">導航</a>`;
-  checklistEl.appendChild(li);
-});
+document.getElementById('statTotal').textContent = SPOTS.filter((s) => s.tier !== 'end').length;
